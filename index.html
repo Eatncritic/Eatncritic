@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home- Eat 'N' Critic</title>
+	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/design.css" rel="stylesheet">
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+</head>
+<body>
+	<header class="tm-header" id="tm-header">
+        <div class="tm-header-wrapper">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="tm-site-header">
+                 
+                <div id="logo">
+                    <img src="img/logo_transparent.png" width="190px" height="190px"> 
+                   </div>          
+                <h1 class="text-center">Eat 'N' Critic</h1>
+                <h2 class="text-center">Building Food Community</h2>
+            </div>
+            <nav class="tm-nav" id="tm-nav">            
+                <ul>
+                    <li class="tm-nav-item active"><a href="index.html" class="tm-nav-link">
+                        <i class="fas fa-home"></i>
+                         Home
+                    </a></li>
+                    <li class="tm-nav-item"><a href="post.html" class="tm-nav-link">
+                        <i class="fas fa-pen"></i>
+                        Create Post
+                    </a></li>
+                    <li class="tm-nav-item"><a href="about.html" class="tm-nav-link">
+                        <i class="fas fa-users"></i>
+                        About Eat 'N' Critic
+                    </a></li>
+                    <li class="tm-nav-item"><a href="contact.html" class="tm-nav-link">
+                        <i class="far fa-comments"></i>
+                        Contact Us
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="tm-mb-65">
+                <a rel="nofollow" href="https://www.facebook.com/eknath.malu" class="tm-social-link">
+                    <i class="fab fa-facebook tm-social-icon"></i>
+                </a>
+                <a href=" https://twitter.com/EknathMalu?t=nwaDVtiSWCHjxunJzgeX1w&s=08" class="tm-social-link">
+                    <i class="fab fa-twitter tm-social-icon"></i>
+                </a>
+                <a href="https://www.instagram.com/eknath_malu20/" class="tm-social-link">
+                    <i class="fab fa-instagram tm-social-icon"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/eknath-malu-6a10b7174/" class="tm-social-link">
+                    <i class="fab fa-linkedin tm-social-icon"></i>
+                </a>
+                <a href="https://github.com/Eatncritic/Eatncritic" class="tm-social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <p class="tm-mb-80 pr-5 text-white">
+                It is a non-profitable website planned to build a food community,
+                 where any user can post there review about a restaurant
+            </p>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <main class="tm-main">
+            <!-- Search form -->
+            <div class="row tm-row">
+                <div class="col-12">
+                    <form method="GET" class="form-inline tm-mb-80 tm-search-form">                
+                        <input class="form-control tm-search-input" name="query" type="text" placeholder="Search..." aria-label="Search">
+                        <button class="tm-search-button" type="submit">
+                            <i class="fas fa-search tm-search-icon" aria-hidden="true"></i>
+                        </button>
+                        <div>
+                            <body>
+                                <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+                                <script>
+                                  function onSignIn(googleUser) {
+                                    // Useful data for your client-side scripts:
+                                    var profile = googleUser.getBasicProfile();
+                                    console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+                                    console.log('Full Name: ' + profile.getName());
+                                    console.log('Given Name: ' + profile.getGivenName());
+                                    console.log('Family Name: ' + profile.getFamilyName());
+                                    console.log("Image URL: " + profile.getImageUrl());
+                                    console.log("Email: " + profile.getEmail());
+                            
+                                    // The ID token you need to pass to your backend:
+                                    var id_token = googleUser.getAuthResponse().id_token;
+                                    console.log("ID Token: " + id_token);
+                                  }
+                                </script>
+                              </body>
+                               
+                        </div>       
+                    </form>
+                </div>                
+           
+
+            </div>            
+            <div class="row tm-row">
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="post.html" class="effect-lily tm-post-link tm-pt-60">
+                        <div class="tm-post-link-inner">
+                            <img src="img/img-01.jpg" alt="Image" class="img-fluid">                            
+                        </div>
+                        <span class="position-absolute tm-new-badge">New</span>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Arsalan Restaurant & Caterer</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aliquid optio asperiores iste
+                         doloremque corporis,
+                         natus facilis perspiciatis dolorem amet maiores ipsa quaerat illo distinctio sunt tempore.
+                          Ex, harum voluptate!
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Restaurant. Food</span>
+                        <span class="tm-color-primary">June 24, 2021</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>36 comments</span>
+                        
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="post.html" class="effect-lily tm-post-link tm-pt-60">
+                        <div class=" tm-post-link-inner">
+                            <img src="img/img-02.jpg" alt="Image" class="img-fluid">                            
+                        </div>
+                        <span class="position-absolute tm-new-badge">New</span>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">ABC Food Court</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        <a rel="nofollow" href="https://templatemo.com/tm-553-xtra-blog" target="_blank"></a>  Lorem ipsum, dolor sit amet 
+                        consectetur adipisicing elit. Doloremque amet praesentium, explicabo repellat doloribus ea veritatis 
+                        magnam suscipit! Voluptatum illo placeat blanditiis distinctio maxime pariatur tenetur hic reiciendis officiis modi.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Restaurant .Food</span>
+                        <span class="tm-color-primary">June 16, 2021</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>48 comments</span>
+                        
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="post.html" class="effect-lily tm-post-link tm-pt-20">
+                        <div class="tm-post-link-inner">
+                            <img src="img/img-03.jpg" alt="Image" class="img-fluid">
+                        </div>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">KFC</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus modi expedita suscipit!
+                         Deleniti placeat, iste nihil asperiores molestiae, recusandae distinctio aliquid molestias
+                          optio tenetur quam earum temporibus sequi quis culpa!
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Restaurant . Food</span>
+                        <span class="tm-color-primary">June 11, 2021</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>24 comments</span>
+            
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="post.html" class="effect-lily tm-post-link tm-pt-20">
+                        <div class="tm-post-link-inner">
+                            <img src="img/img-04.jpg" alt="Image" class="img-fluid">
+                        </div>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Domino's Pizza</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, hic sit delectus tempora
+                         dolorum facilis. Harum odio tempora sed commodi ratione, sit facilis labore nostrum, impedit,
+                          ipsa tempore error ut.
+                        </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Restaurant . Food</span>
+            
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>72 comments</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="post.html" class="effect-lily tm-post-link tm-pt-20">
+                        <div class="tm-post-link-inner">
+                            <img src="img/img-05.jpg" alt="Image" class="img-fluid">
+                        </div>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">NewTown Dhaba</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima doloribus, quisquam, eum 
+                        exercitationem vero saepe at tempora maxime modi odit beatae voluptas. Iusto recusandae debitis 
+                        quaerat voluptas sint qui excepturi?
+
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Restaurant . Food</span>
+                        <span class="tm-color-primary">May 31, 2021</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>84 comments</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="post.html" class="effect-lily tm-post-link tm-pt-20">
+                        <div class="tm-post-link-inner">
+                            <img src="img/img-06.jpg" alt="Image" class="img-fluid">
+                        </div>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">MainLand China</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure maxime porro, necessitatibus aliquid a
+                         aut dolorum ullam ab recusandae cum quam commodi quia obcaecati earum nobis provident quibusdam 
+                         consequuntur accusantium.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Restaurant . Food</span>
+                        <span class="tm-color-primary">June 16, 2021</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>96 comments</span>
+                        <span>by Admin Sam</span>
+                    </div>
+                </article>
+            </div>
+            <div class="row tm-row tm-mt-100 tm-mb-75">
+                <div class="tm-prev-next-wrapper">
+                    <a href="#" class="mb-2 tm-btn tm-btn-primary tm-prev-next disabled tm-mr-20">Prev</a>
+                    <a href="#" class="mb-2 tm-btn tm-btn-primary tm-prev-next">Next</a>
+                </div>
+                <div class="tm-paging-wrapper">
+                    <span class="d-inline-block mr-3">Page</span>
+                    <nav class="tm-paging-nav d-inline-block">
+                        <ul>
+                            <li class="tm-paging-item active">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">1</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">2</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">3</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">4</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>                
+            </div>            
+            <footer class="row tm-row">
+                <hr class="col-12">
+                <div>
+                    Design- CSE 4C Group 88
+                </div>
+                <div class="col-md-6 col-12 tm-color-gray tm-copyright">
+                    Copyright 2021 Eat 'N' Critic
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/templatemo-script.js"></script>
+</body>
+</html>
